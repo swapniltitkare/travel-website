@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+html {
+    background: url('../images/background1.jpg') no-repeat center center fixed; 
+    background-size: cover;
+  }
+
+.nav_section{
+    width: 100%;
+    height: 3rem;
+    background-color: #333333;
+    position:fixed;
+    top: 0;
+    z-index: 100;
+    opacity: 0.6;
+    border-bottom: 1px solid white;
+}
+
+.nav_section .logo{
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+    color: ghostwhite;
+    font-size: 2rem;
+    font-family: cursive;
+}
+
+.nav_section .nav_links{
+    display: inline;
+    margin: 0 auto;
+    width: 80%;
+    align-items: center;
+    height: 100%;
+    font-size: 1.4rem;
+}
+
+.nav_section .nav_links ul{
+    display: inline;
+    align-items: center;
+    text-align: center;
+    float: right;
+    margin-right: 2rem;
+    margin-top: 0.6rem;
+    font-family: cursive;
+}
+
+.nav_section .nav_links ul li{
+    display: inline;
+    padding: 0 1rem;
+}
+
+.nav_section .nav_links ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.4rem;
+    
+}
+
+.nav_section .nav_links ul li a:hover{
+    color: red;
+}
+
+.mid_section{
+    display: inline-block;
+    width: 100%;
+    height: 30rem;
+    position: relative;
+    top: 3rem;
+    opacity: 1;
+}
+
+.mid_section .main_title{
+    display:inline-block;
+    position:absolute;
+    width: 50%;
+    height: 22rem;
+    text-align: center;
+    top: 5rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.mid_section .main_title h3{
+    margin-top: 1rem;
+}
+
+.mid_section .main_title p{
+    margin: 1rem 1rem;
+    font-size: 1.5rem;
+}
+
+.mid_section .main_title .explore_btn{
+    width: 6rem;
+    height: 2rem;
+    background: transparent;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.mid_section .main_title .explore_btn:hover{
+    transform: scale(1.2,1.2);
+    font-weight: 1000;
+    background-color: #e97216;
+    color: white;
+}
+
+.mid_section .tourist_img{
+    position: relative;
+    border: 1px solid red;
+    float: right;
+    width: 50%;
+    top: 5rem;
+}
+
+.mid_section .tourist_img img{
+    width: 30rem;
+    margin-left: 10rem;
+}
+
+footer {
+    position:absolute;
+    text-align: center;
+    bottom:0rem;
+    width:100%;
+    font-weight: 500;
+    background:#777d7f;
+    padding-top: 0.2rem;
+    font-size: 0.8rem;
+}
+
+footer .social_btn {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+footer .social_btn ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    line-height:1.6;
+    margin-bottom:0;
+}
+
+footer .social_btn ul li{
+    display: inline-block;
+    padding: 0 0.5rem;
+    margin: 0 0.3rem;
+    background-color: rgb(252, 252, 252);
+    border-radius: 50%;
+}
+
+footer .social_btn ul li a{
+    text-decoration: none;
+}
+
+footer .social_btn ul li:hover{
+    text-decoration: none;
+    transform: scale(1.1,1.1);
+}
+
+@media(max-width:900px){
+    html{
+        font-size: 65.55%;
+    }
+
+    .nav_section .logo{
+        margin-left: 1rem;
+    }
+
+    .mid_section{
+        top: 5rem;
+        width: 70%;
+    }
+
+    .mid_section .main_title{
+        display: block;
+        width: 70%;
+    }
+
+    .mid_section .main_title{
+        display: block;
+    }
+
+    .mid_section .tourist_img{
+        display: block;
+    }
+
+}
+
+@media(max-width:550px){
+    html{
+        font-size: 40%;
+    }
+
+    .mid_section{
+        top: 5rem;
+        width: 100%;
+    }
+}

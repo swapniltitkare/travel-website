@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+html { 
+    background: url('../images/background2.jpg') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.nav_section{
+    width: 100%;
+    height: 3rem;
+    background-color: #333333;
+    position:fixed;
+    top: 0;
+    z-index: 100;
+    opacity: 0.6;
+    border-bottom: 1px solid white;
+}
+
+.nav_section .logo{
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+    color: ghostwhite;
+    font-size: 2rem;
+    font-family: cursive;
+}
+
+.nav_section .nav_links{
+    display: inline;
+    margin: 0 auto;
+    width: 80%;
+    align-items: center;
+    height: 100%;
+    font-size: 1.4rem;
+}
+
+.nav_section .nav_links ul{
+    display: inline;
+    align-items: center;
+    text-align: center;
+    float: right;
+    margin-right: 2rem;
+    margin-top: 0.6rem;
+    font-family: cursive;
+}
+
+.nav_section .nav_links ul li{
+    display: inline;
+    padding: 0 1rem;
+}
+
+.nav_section .nav_links ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.4rem;
+    
+}
+
+.nav_section .nav_links ul li a:hover{
+    color: red;
+}
+
+.contact_section{
+border: 3px solid whitesmoke;
+position: relative;
+top: 8rem;
+left: 3rem;
+width: 40%;
+height: 23rem;
+text-align: center;
+color: white;
+border-top-left-radius: 4rem;
+border-bottom-right-radius: 4rem;
+}
+
+.contact_section h2{
+    margin: 1rem;
+    font-size: 2rem;
+    float: left;
+    margin-left: 3rem;
+}
+
+::placeholder {
+    color: white;
+    font-weight: 500;
+    opacity: 1;
+  }
+
+.contact_section .contact_form{
+    width: 10rem;
+    margin-left: 2rem;
+    line-height: 3rem;
+}
+
+.contact_section .contact_form input{
+    width: 13rem;
+    height: 2rem;
+    border: 1px solid whitesmoke;
+    background: transparent;
+    color: whitesmoke;
+    padding-left: 0.8rem;
+    margin-top:1rem ;
+    margin-left:1rem ;
+}
+
+
+.contact_section .contact_form textarea{
+    border: 1px solid whitesmoke;
+    background: transparent;
+    padding-left: 0.8rem;
+    margin-top: 1rem;
+    color: whitesmoke;
+    margin-left:1rem ;
+}
+
+.contact_section .contact_form .contact_submit_btn{
+    width: 6rem;
+    height: 2rem;
+    background: transparent;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    outline: none;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.contact_section .contact_form .contact_submit_btn:hover{
+    transform: scale(1.2,1.2);
+    font-weight: 1000;
+    color: white;
+    background-color: rgb(38, 27, 25);
+}
+
+footer {
+    position:absolute;
+    text-align: center;
+    bottom:0rem;
+    width:100%;
+    font-weight: 500;
+    background:#777d7f;
+    padding-top: 0.2rem;
+    font-size: 0.8rem;
+}
+
+footer .social_btn {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+footer .social_btn ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    line-height:1.6;
+    margin-bottom:0;
+}
+
+footer .social_btn ul li{
+    display: inline-block;
+    padding: 0 0.5rem;
+    margin: 0 0.3rem;
+    background-color: rgb(252, 252, 252);
+    border-radius: 50%;
+}
+
+footer .social_btn ul li a{
+    text-decoration: none;
+}
+
+footer .social_btn ul li:hover{
+    text-decoration: none;
+    transform: scale(1.1,1.1);
+}
+
+@media(max-width:900px){
+    html{
+        font-size: 65.55%;
+    }
+
+    .nav_section .logo{
+        margin-left: 1rem;
+    }
+
+    .contact_section .contact_form textarea{
+        font-size: 75.55%;
+    }
+}
+
+@media(max-width:800px){
+    html{
+        font-size: 40.55%;
+    }
+
+
+    .contact_section .contact_form input{
+        font-size: 40.55%;
+    }
+
+    .contact_section .contact_form textarea{
+        font-size: 60.55%;
+    }
+
+    .contact_section .contact_form .contact_submit_btn{
+        font-size: 40.55%;
+    }
+
+    .contact_section{
+        width: 50%;
+        margin: auto;
+        height: 25rem;
+        }
+}
+
+@media(max-width:600px){
+    html{
+        font-size: 30.55%;
+    }
+
+    .contact_section .contact_form input{
+        font-size: 30.55%;
+    }
+
+    .contact_section .contact_form textarea{
+        font-size: 35.55%;
+    }
+
+    .contact_section{
+        width: 50%;
+        margin: auto;
+        height: 28rem;
+        }
+
+        .contact_section .contact_form .contact_submit_btn{
+            font-size: 30.55%;
+        }
+}
+
+@media(max-width:550px){
+    html{
+        font-size: 20%;
+    }
+
+    .contact_section .contact_form input{
+        font-size: 20%;
+    }
+
+    .contact_section .contact_form textarea{
+        font-size: 25.55%;
+    }
+
+    .contact_section{
+        width: 50%;
+        margin: auto;
+        height: 32rem;
+        }
+
+        .contact_section .contact_form .contact_submit_btn{
+            font-size: 20%;
+        }
+}
